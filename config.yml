@@ -1,6 +1,7 @@
 baseURL: "https://wangyida.github.io/"
 title: Yida Wang
-paginate: 8
+pagination:
+  pagerSize: 8
 theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -8,7 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-108746836-1
+googleAnalytics: G-RL5M98KK1K # UA-108746836-1
 
 minify:
     disableXML: true
@@ -42,15 +43,15 @@ params:
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
-        favicon: "/logo_yida.png"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "/icon_Y32x32.png"
-        apple_touch_icon: "/logo_yida.png"
-        safari_pinned_tab: "/logo_yida.png"
+        favicon: "/logos/android-chrome-512x512.png"
+        favicon16x16: "/logos/favicon-16x16.png"
+        favicon32x32: "/logos/favicon-32x32.png"
+        apple_touch_icon: "/logos/apple-touch-icon.png"
+        safari_pinned_tab: "/logos/android-chrome-192x192.png"
 
     label:
-        text: ". WANG"
-        icon: /logo_yida_long.png
+        text: " Home"
+        icon: /logos/android-chrome-512x512.png
         iconHeight: 35
 
     # profile-mode
@@ -58,7 +59,7 @@ params:
         enabled: false # needs to be explicitly set
         title: Yida WANG
         subtitle: "Ph.D. (Doktors der Naturwissenschaften) from [Technische Universität München](https://www.tum.de/)"
-        imageUrl: "Photo_home.jpg"
+        imageUrl: "/logos/android-chrome-512x512.png"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
@@ -72,17 +73,15 @@ params:
     homeInfoParams:
         Title: "Yida WANG"
         Content: >
-          Senior RE at LiAuto, Ph.D. (Doktors der Naturwissenschaften) from [Technische Universität München](https://www.tum.de/), with dissertation [*Learning-based Single View Completion*](https://mediatum.ub.tum.de/doc/1653291/1653291.pdf) released on [TUM lib](https://mediatum.ub.tum.de/?id=1653291) with topic of deep learning techniques for representation and processing of 3D data. Projects have ever got sponsored by Microsoft, Google and Facebook Reality Labs, *e.g.* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj).
-
-          > - **Download**: [My Resume](/resume_yida_en.pdf) or [中文简历](/resume_yida_cn.pdf)
+         Senior Research Engineer at [Li Auto](https://www.lixiang.com/tech/autodrive#li) Inc. | PhD in Natural Sciences (*Dr. rer. nat.*) from Technical University of Munich. 
 
     socialIcons:
         - name: linkedin
           url: "https://www.linkedin.com/in/yida-wang-910123"
-        - name: qq
-          url: "https://wangyida.github.io/QRcodes/QRcode_qq.pdf"
-        - name: wechat
-          url: "https://wangyida.github.io/QRcodes/QRcode_wechat.pdf"
+        # - name: qq
+        #   url: "https://wangyida.github.io/QRcodes/QRcode_qq.pdf"
+        # - name: wechat
+        #   url: "https://wangyida.github.io/QRcodes/QRcode_wechat.pdf"
         - name: googlescholar
           url: "https://scholar.google.com/citations?user=HpfFgYIAAAAJ&hl=en"
         - name: github
@@ -92,9 +91,9 @@ params:
         - name: facebook
           url: "https://www.facebook.com/yida.wang.0123"
         - name: cv
-          url: "https://wangyida.github.io/resume_yida_en.pdf"   
-        - name: alipay
-          url: "https://wangyida.github.io/QRcodes/QRcode_alipay.pdf"
+          url: "/docs/resume_yida_en.pdf"   
+        # - name: alipay
+        #   url: "https://wangyida.github.io/QRcodes/QRcode_alipay.pdf"
 
     analytics:
         google:
@@ -127,21 +126,17 @@ params:
 menu:
     main:
         - identifier: archive
-          name: archive
+          name: Archive
           url: archives/
           weight: 5
         - identifier: categories
-          name: categories
+          name: Categories
           url: /categories/
           weight: 10
         - identifier: tags
-          name: tags
+          name: Tags
           url: /tags/
           weight: 20
-        - identifier: labsite
-          name: lab-site
-          url: http://campar.in.tum.de/Main/YidaWang
-          weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
