@@ -1,0 +1,155 @@
+baseURL: "https://wangyida.github.io/"
+title: Yida Wang
+pagination:
+  pagerSize: 8
+theme: PaperMod
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-RL5M98KK1K # UA-108746836-1
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Homepage
+    description: "Department Head (World Map Lab) at Joy Future Academy"
+    keywords: [Research, Portfolio, PaperMod]
+    author: Yida
+    # author: ["Me", "You"] # multiple authors
+    images: ["/logos/android-chrome-512x512.png"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: true
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/logos/android-chrome-512x512.png"
+        favicon16x16: "/logos/favicon-16x16.png"
+        favicon32x32: "/logos/favicon-32x32.png"
+        apple_touch_icon: "/logos/apple-touch-icon.png"
+        safari_pinned_tab: "/logos/android-chrome-192x192.png"
+
+    label:
+        text: " Home"
+        icon: /logos/android-chrome-512x512.png
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: Yida WANG
+        subtitle: "Ph.D. (Doktors der Naturwissenschaften) from [Technische Universität München](https://www.tum.de/)"
+        imageUrl: "/logos/android-chrome-512x512.png"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Publications
+              url: /archives
+            - name: Tags
+              url: /tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Yida WANG"
+        Content: >
+         <img src="/logos/joyai_logo.png" alt="Joy Future Academy" height="40" style="vertical-align: middle; margin-right: 8px;">Department Head of World Map Lab, [Joy Future Academy](https://research.joyai.com/) | PhD in Natural Sciences (*Dr. rer. nat.*) from Technical University of Munich.
+
+
+         **We are hiring research engineers and interns!** 
+
+    socialIcons:
+        - name: linkedin
+          url: "https://www.linkedin.com/in/yida-wang-910123"
+        # - name: qq
+        #   url: "https://wangyida.github.io/QRcodes/QRcode_qq.pdf"
+        # - name: wechat
+        #   url: "https://wangyida.github.io/QRcodes/QRcode_wechat.pdf"
+        - name: googlescholar
+          url: "https://scholar.google.com/citations?user=HpfFgYIAAAAJ&hl=en"
+        - name: github
+          url: "https://github.com/wangyida"
+        - name: youtube
+          url: "https://www.youtube.com/channel/UCvu4OW3TufWFsj-vNrzeEiw"
+        - name: facebook
+          url: "https://www.facebook.com/yida.wang.0123"
+        - name: cv
+          url: "https://wangyida.github.io/docs/resume_yida_en.pdf"   
+        # - name: alipay
+        #   url: "https://wangyida.github.io/QRcodes/QRcode_alipay.pdf"
+
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+        bing:
+            SiteVerificationTag: "XYZabc"
+        yandex:
+            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: false # hide on list pages and home
+        hiddenInSingle: false # hide on single page
+
+    editPost:
+        URL: "https://github.com/wangyida/wangyida.github.io/tree/master/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: archive
+          name: Archive
+          url: /archives/
+          weight: 5
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
